@@ -1,0 +1,15 @@
+{
+  "scripts": {
+    "skills:scan": "node scripts/scan-nested-skills.js",
+    "skills:scan:dry": "node scripts/scan-nested-skills.js --dry-run",
+    "skills:resolve": "node scripts/resolve-nested-skill.js",
+    "skills:resolve:cache": "node scripts/resolve-nested-skill.js --no-cache",
+    "skills:resolve:wildcard": "node scripts/resolve-nested-skill.js --wildcard",
+    "skills:resolve:parse": "node scripts/resolve-nested-skill.js --parse",
+    "skills:deps": "node scripts/resolve-nested-skill.js --depends",
+    "skills:deps:tree": "node scripts/resolve-nested-skill.js --depends-tree"
+  },
+  "dependencies": {
+    "@opencode-ai/plugin": "1.15.0"
+  }
+}

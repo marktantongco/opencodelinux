@@ -1,0 +1,212 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "plugin": [
+    "opencode-snip",
+    "envsitter-guard",
+    "opencode-ignore",
+    "ring-a-bell",
+    "opencode-notify",
+    "tokenscope",
+    "opencode-quota",
+    "opencode-plugin-openspec",
+    "opencode-skills",
+    "pocket-universe",
+    "opencode-terminal-progress"
+  ],
+  "model": "opencode/deepseek-v4-flash-free",
+  "small_model": "opencode/deepseek-v4-flash-free",
+  "default_agent": "orchestrator",
+  "provider": {
+    "9router": {
+      "npm": "@ai-sdk/openai-compatible",
+      "name": "9Router Podman Gateway",
+      "options": {
+        "baseURL": "http://127.0.0.1:20128/v1",
+        "apiKey": "sk-9router-local",
+        "timeout": 300000
+      },
+      "models": {
+        "kr/claude-sonnet-4.5": {
+          "name": "Claude Sonnet 4.5 (Free)"
+        },
+        "glm/glm-5.1": {
+          "name": "GLM-5.1 (Cheap)"
+        },
+        "minimax/MiniMax-M2.7": {
+          "name": "MiniMax M2.7"
+        },
+        "oc/auto": {
+          "name": "OpenCode Free"
+        },
+        "qwen/qwen3.6-plus-free": {
+          "name": "Qwen 3.6 Plus (Free)"
+        }
+      }
+    }
+  },
+  "lsp": true,
+  "agent": {
+    "orchestrator": {
+      "description": "Primary orchestrator for coordinating multi-agent workflows and task decomposition",
+      "mode": "primary",
+      "model": "opencode/deepseek-v4-flash-free",
+      "permission": {
+        "edit": "allow",
+        "bash": "allow"
+      }
+    },
+    "blueprint": {
+      "description": "Strategic planning, brainstorming, architecture design, and research synthesis",
+      "mode": "primary",
+      "model": "opencode/nemotron-3-super-free",
+      "permission": {
+        "edit": "allow",
+        "bash": "allow"
+      }
+    },
+    "explorer": {
+      "description": "Codebase search and pattern discovery specialist",
+      "mode": "subagent",
+      "model": "opencode/deepseek-v4-flash-free"
+    },
+    "librarian": {
+      "description": "Documentation and API reference specialist",
+      "mode": "subagent",
+      "model": "opencode/deepseek-v4-flash-free"
+    },
+    "oracle": {
+      "description": "Strategic technical advisor for architecture and complex problems",
+      "mode": "subagent",
+      "model": "opencode/claude-opus-4-7"
+    },
+    "designer": {
+      "description": "UI/UX design specialist for polished interfaces",
+      "mode": "subagent",
+      "model": "opencode/gpt-5.5"
+    },
+    "fixer": {
+      "description": "Code refinement, optimization, refactoring, and cleanup",
+      "mode": "subagent",
+      "model": "opencode/deepseek-v4-flash-free"
+    },
+    "observer": {
+      "description": "Watches and reports on system behavior, logs, and metrics",
+      "mode": "subagent",
+      "model": "opencode/gpt-5.5"
+    },
+    "council": {
+      "description": "Multi-perspective deliberation and consensus for complex decisions",
+      "mode": "subagent",
+      "model": "opencode/claude-sonnet-4-6"
+    },
+    "compaction": {
+      "description": "Context compression and session compaction",
+      "mode": "subagent",
+      "model": "opencode/deepseek-v4-flash-free"
+    },
+    "brainstorming": {
+      "description": "Creative ideation and divergent thinking for generating options and exploring possibilities",
+      "mode": "subagent",
+      "model": "opencode/deepseek-v4-flash-free"
+    },
+    "researcher": {
+      "description": "Web research, competitive analysis, feature investigation, and information gathering",
+      "mode": "subagent",
+      "model": "opencode/deepseek-v4-flash-free"
+    },
+    "oracle-lite": {
+      "description": "Strategic technical advice with lightweight model fallback",
+      "mode": "subagent",
+      "model": "9router/qwen/qwen3.6-plus-free"
+    },
+    "designer-lite": {
+      "description": "UI/UX design with lightweight model fallback",
+      "mode": "subagent",
+      "model": "9router/qwen/qwen3.6-plus-free"
+    },
+    "observer-lite": {
+      "description": "System monitoring with lightweight model fallback",
+      "mode": "subagent",
+      "model": "9router/qwen/qwen3.6-plus-free"
+    },
+    "council-lite": {
+      "description": "Multi-perspective deliberation with lightweight model fallback",
+      "mode": "subagent",
+      "model": "9router/qwen/qwen3.6-plus-free"
+    },
+    "plan": {
+      "description": "Plan grammar enforcement — validates plan structure, constraints, and lifecycle",
+      "mode": "subagent",
+      "model": "opencode/deepseek-v4-flash-free"
+    }
+  },
+  "mcp": {
+    "context7": {
+      "type": "remote",
+      "url": "https://mcp.context7.com/mcp",
+      "headers": {
+        "CONTEXT7_API_KEY": "${CONTEXT7_API_KEY}"
+      },
+      "enabled": true
+    },
+    "sequential-thinking": {
+      "type": "local",
+      "command": ["npx", "-y", "@modelcontextprotocol/server-sequential-thinking"],
+      "enabled": true
+    },
+    "memory": {
+      "type": "local",
+      "command": ["npx", "-y", "@modelcontextprotocol/server-memory"],
+      "enabled": true
+    },
+    "github": {
+      "type": "local",
+      "command": ["npx", "-y", "@modelcontextprotocol/server-github"],
+      "env": {
+        "GITHUB_TOKEN": "${GITHUB_TOKEN}"
+      },
+      "enabled": true
+    },
+    "puppeteer": {
+      "type": "local",
+      "command": ["npx", "-y", "@modelcontextprotocol/server-puppeteer"],
+      "enabled": true
+    },
+    "postgres": {
+      "type": "local",
+      "command": ["npx", "-y", "@modelcontextprotocol/server-postgres"],
+      "env": {
+        "DATABASE_URL": "${DATABASE_URL}"
+      },
+      "enabled": false
+    },
+    "podman": {
+      "type": "local",
+      "command": ["npx", "-y", "mcp-server-docker"],
+      "env": {
+        "DOCKER_HOST": "unix:///run/user/1000/podman/podman.sock"
+      },
+      "enabled": true
+    },
+    "mcp-search": {
+      "type": "local",
+      "command": ["node", "./mcp-servers/mcp-search/dist/index.js"],
+      "enabled": true
+    },
+    "pictoflux-ai": {
+      "type": "local",
+      "command": ["node", "./mcp-servers/pictoflux-ai/dist/index.js"],
+      "enabled": true
+    },
+    "mcp-catalog": {
+      "type": "local",
+      "command": ["node", "./mcp-servers/mcp-catalog/dist/index.js"],
+      "enabled": true
+    },
+    "mcp-security-scanner": {
+      "type": "local",
+      "command": ["node", "./mcp-servers/mcp-security-scanner/dist/index.js"],
+      "enabled": true
+    }
+  }
+}

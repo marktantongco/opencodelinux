@@ -1,0 +1,2040 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Skills Showcase — 48 Active Skills</title>
+<meta name="description" content="Interactive showcase of 48 AI agent skills across 10 categories including Agent Modes and MCP Servers — Neo-Brutalist Gen Z Design. Built with GSAP, Web Components, JSON-LD.">
+<meta name="robots" content="index, follow">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+<link rel="canonical" href="https://agentskills.io/showcase">
+
+<meta property="og:title" content="AI Skills Showcase — 48 Active Skills">
+<meta property="og:description" content="Interactive showcase of 48 AI agent skills across 10 categories including Agent Modes and MCP Servers. Neo-brutalist ultramodern Gen Z design.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://agentskills.io/showcase">
+<meta property="og:image" content="og-skills-showcase.png">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="AI Skills Showcase — 48 Active Skills">
+<meta name="twitter:description" content="Interactive showcase of 48 AI agent skills across 10 categories including Agent Modes and MCP Servers.">
+<meta name="twitter:image" content="og-skills-showcase.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&family=Archivo+Black&display=swap" rel="stylesheet">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/Flip.min.js"></script>
+
+<!-- JSON-LD: Machine-readable ItemList of ALL skills for search engine and AI agent discovery -->
+<script type="application/ld+json" id="ld-skills-list">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "AI Agent Skills Collection",
+  "description": "48 active AI agent skills across 10 categories including Agent Modes and MCP Servers",
+  "numberOfItems": 48,
+  "itemListElement": [
+    {"@type":"ListItem","position":1,"item":{"@type":"SoftwareApplication","name":"ui-ux-pro-max-v7","applicationCategory":"AISkill","description":"AI design intelligence — 60 styles, 48 palettes, 36 fonts, 24 industry rules, production-grade components"}},
+    {"@type":"ListItem","position":2,"item":{"@type":"SoftwareApplication","name":"anthropic-frontend-design","applicationCategory":"AISkill","description":"Bold aesthetics for AI-native interfaces, conversational UI, trust-forward design"}},
+    {"@type":"ListItem","position":3,"item":{"@type":"SoftwareApplication","name":"gsap-animations","applicationCategory":"AISkill","description":"Production-grade GSAP animation patterns — 24 patterns, ScrollTrigger, Flip plugin, React integration"}},
+    {"@type":"ListItem","position":4,"item":{"@type":"SoftwareApplication","name":"frontend-design","applicationCategory":"AISkill","description":"shadcn/ui + Tailwind + React component generation for production-ready UI"}},
+    {"@type":"ListItem","position":5,"item":{"@type":"SoftwareApplication","name":"vercel-web-design-guidelines","applicationCategory":"AISkill","description":"Comprehensive accessibility-first UX rules and performance budgets"}},
+    {"@type":"ListItem","position":6,"item":{"@type":"SoftwareApplication","name":"chain-of-thought","applicationCategory":"AISkill","description":"Step-by-step reasoning framework for complex problems"}},
+    {"@type":"ListItem","position":7,"item":{"@type":"SoftwareApplication","name":"socratic-method","applicationCategory":"AISkill","description":"Strategic questioning to uncover assumptions and guide discovery"}},
+    {"@type":"ListItem","position":8,"item":{"@type":"SoftwareApplication","name":"devils-advocate","applicationCategory":"AISkill","description":"Argue against premises to strengthen arguments and prevent confirmation bias"}},
+    {"@type":"ListItem","position":9,"item":{"@type":"SoftwareApplication","name":"simulation-sandbox","applicationCategory":"AISkill","description":"Test scenarios in safe simulated environments without real-world consequences"}},
+    {"@type":"ListItem","position":10,"item":{"@type":"SoftwareApplication","name":"mcp-builder","applicationCategory":"AISkill","description":"Build MCP servers with TypeScript + Python, full lifecycle planning"}},
+    {"@type":"ListItem","position":11,"item":{"@type":"SoftwareApplication","name":"superpowers","applicationCategory":"AISkill","description":"Spec-first development with TDD and sub-agent delegation"}},
+    {"@type":"ListItem","position":12,"item":{"@type":"SoftwareApplication","name":"deployment-manager","applicationCategory":"AISkill","description":"Deploy, monitor, update across GitHub Pages, Vercel, Netlify"}},
+    {"@type":"ListItem","position":13,"item":{"@type":"SoftwareApplication","name":"browser-use","applicationCategory":"AISkill","description":"Headful browser automation with natural language control"}},
+    {"@type":"ListItem","position":14,"item":{"@type":"SoftwareApplication","name":"web-artifacts-builder","applicationCategory":"AISkill","description":"Single-file HTML artifacts with React + Tailwind, zero dependencies"}},
+    {"@type":"ListItem","position":15,"item":{"@type":"SoftwareApplication","name":"vercel-react-best-practices","applicationCategory":"AISkill","description":"Production-grade React architecture, hooks patterns, SSR/SSG strategies"}},
+    {"@type":"ListItem","position":16,"item":{"@type":"SoftwareApplication","name":"explained-code","applicationCategory":"AISkill","description":"Beginner-friendly code explanation with analogies and diagrams"}},
+    {"@type":"ListItem","position":17,"item":{"@type":"SoftwareApplication","name":"seo-content-writer","applicationCategory":"AISkill","description":"SEO-optimized content creation with GEO optimization for AI answer engines"}},
+    {"@type":"ListItem","position":18,"item":{"@type":"SoftwareApplication","name":"humanizer","applicationCategory":"AISkill","description":"Strip AI writing patterns for human-like copy — anti-AI-detection rewriting"}},
+    {"@type":"ListItem","position":19,"item":{"@type":"SoftwareApplication","name":"social-media-manager","applicationCategory":"AISkill","description":"Platform-appropriate post generation for 30 days across LinkedIn, Twitter, Instagram, TikTok"}},
+    {"@type":"ListItem","position":20,"item":{"@type":"SoftwareApplication","name":"social-content-pillars","applicationCategory":"AISkill","description":"Monthly content calendar for multi-brand social media with 90-day editorial plan"}},
+    {"@type":"ListItem","position":21,"item":{"@type":"SoftwareApplication","name":"jtbd-research","applicationCategory":"AISkill","description":"8-step Jobs to be Done product research methodology"}},
+    {"@type":"ListItem","position":22,"item":{"@type":"SoftwareApplication","name":"gumroad-pipeline","applicationCategory":"AISkill","description":"Lead magnet to funnel to product launch workflow for digital products"}},
+    {"@type":"ListItem","position":23,"item":{"@type":"SoftwareApplication","name":"feature-research","applicationCategory":"AISkill","description":"Research existing architecture before implementing a complex feature"}},
+    {"@type":"ListItem","position":24,"item":{"@type":"SoftwareApplication","name":"skill-finder","applicationCategory":"AISkill","description":"Skill discovery, evaluation, and installation meta-skill with security vetting"}},
+    {"@type":"ListItem","position":25,"item":{"@type":"SoftwareApplication","name":"persistent-memory","applicationCategory":"AISkill","description":"Structured memory system for agent context continuity"}},
+    {"@type":"ListItem","position":26,"item":{"@type":"SoftwareApplication","name":"system-prompt-sync","applicationCategory":"AISkill","description":"Auto-sync AGENTS.md across all git repos on version tags"}},
+    {"@type":"ListItem","position":27,"item":{"@type":"SoftwareApplication","name":"feedback-loop","applicationCategory":"AISkill","description":"Iterative improvement cycles from metrics to research"}},
+    {"@type":"ListItem","position":28,"item":{"@type":"SoftwareApplication","name":"context-compressor","applicationCategory":"AISkill","description":"Compress long contexts preserving critical information"}},
+    {"@type":"ListItem","position":29,"item":{"@type":"SoftwareApplication","name":"agent-roles","applicationCategory":"AISkill","description":"Unified multi-agent role system — Builder, Coder, Council, Orchestrator, Plan, Researcher, Reviewer, Scribe"}},
+    {"@type":"ListItem","position":30,"item":{"@type":"SoftwareApplication","name":"sample-hello-skill","applicationCategory":"AISkill","description":"Hello-world demo skill for testing skill activation and validation"}},
+    {"@type":"ListItem","position":31,"item":{"@type":"SoftwareApplication","name":"web-reader","applicationCategory":"AISkill","description":"Web page extraction with site crawling and spidering capabilities"}},
+    {"@type":"ListItem","position":32,"item":{"@type":"SoftwareApplication","name":"audit-analyzer","applicationCategory":"AISkill","description":"Detect and prioritize audit issues — performance, accessibility, monitoring"}},
+    {"@type":"ListItem","position":33,"item":{"@type":"SoftwareApplication","name":"web-design-guidelines","applicationCategory":"AISkill","description":"Quick self-audit checklist for design consistency — typography, color, spacing, accessibility"}},
+    {"@type":"ListItem","position":34,"item":{"@type":"SoftwareApplication","name":"code-research","applicationCategory":"AISkill","description":"Research open-source repositories to understand how something is built"}},
+    {"@type":"ListItem","position":35,"item":{"@type":"SoftwareApplication","name":"explore","applicationCategory":"AISkill","description":"Search a codebase using codebase_search tool — saves time and tokens over grep"}},
+    {"@type":"ListItem","position":36,"item":{"@type":"SoftwareApplication","name":"photography-ai","applicationCategory":"AISkill","description":"Professional visual engineering framework with batch processing, prompt engineering, cinematic sequences"}},
+    {"@type":"ListItem","position":37,"item":{"@type":"SoftwareApplication","name":"output-formatter","applicationCategory":"AISkill","description":"Strict formatting rules for all output types — JSON, tables, markdown"}},
+    {"@type":"ListItem","position":38,"item":{"@type":"SoftwareApplication","name":"pictoflux-ai","applicationCategory":"AISkill","description":"Free unlimited AI image generation via MCP protocol — text-to-image, style transfer, batch generation"}},
+    {"@type":"ListItem","position":39,"item":{"@type":"SoftwareApplication","name":"mcp-stack-curator","applicationCategory":"AISkill","description":"Intelligent MCP server stack builder — recommends optimal 4-server combinations with synergy analysis"}},
+    {"@type":"ListItem","position":40,"item":{"@type":"SoftwareApplication","name":"mcp-registry","applicationCategory":"AISkill","description":"Curated directory of 105+ free MCP servers across 14 categories with deduplication and ratings"}},
+    {"@type":"ListItem","position":41,"item":{"@type":"SoftwareApplication","name":"mcp-security-scanner","applicationCategory":"AISkill","description":"Security-first vetting for MCP server installations — red flag detection, permission auditing, scope analysis"}},
+    {"@type":"ListItem","position":42,"item":{"@type":"SoftwareApplication","name":"rabbit-multiply-ideas","applicationCategory":"AISkill","description":"Take an idea and multiply it into 10 different variations — change the angle, audience, and format for each"}},
+    {"@type":"ListItem","position":43,"item":{"@type":"SoftwareApplication","name":"owl-deep-analysis","applicationCategory":"AISkill","description":"Think slowly and analytically — examine problems from multiple perspectives and identify hidden factors most people overlook"}},
+    {"@type":"ListItem","position":44,"item":{"@type":"SoftwareApplication","name":"ant-break-into-steps","applicationCategory":"AISkill","description":"Break goals into the smallest possible steps someone could realistically complete"}},
+    {"@type":"ListItem","position":45,"item":{"@type":"SoftwareApplication","name":"eagle-big-picture","applicationCategory":"AISkill","description":"See the long-term strategy — explain how all the pieces connect from a bird's-eye view"}},
+    {"@type":"ListItem","position":46,"item":{"@type":"SoftwareApplication","name":"dolphin-creative-solutions","applicationCategory":"AISkill","description":"Generate curious, playful, and inventive solutions that most people wouldn't normally consider"}},
+    {"@type":"ListItem","position":47,"item":{"@type":"SoftwareApplication","name":"beaver-build-systems","applicationCategory":"AISkill","description":"Design practical systems that solve problems step by step, like a beaver building a dam"}},
+    {"@type":"ListItem","position":48,"item":{"@type":"SoftwareApplication","name":"elephant-cross-field","applicationCategory":"AISkill","description":"Connect ideas to insights from other fields such as psychology, economics, science, or history"}}
+  ]
+}
+</script>
+
+<style>
+/* ===================================================================
+   NEO-BRUTALIST ULTRAMODERN GEN Z DESIGN SYSTEM v5.0.2
+   - Thick borders, hard offset shadows, high-sat colors
+   - WCAG AA compliant contrast on all text
+   - Monospace + display typography, sticker badges
+   - Glitch effects, grain overlay, asymmetric layouts
+   - Y2K chrome accents, anti-minimal maximalism
+   - Dynamic ?palette= endpoint for live theme generation
+   =================================================================== */
+
+:root {
+  --brand-primary: #BFFF00;    /* Electric lime */
+  --brand-secondary: #FF2E63;  /* Hot pink */
+  --brand-tertiary: #08F7FE;   /* Cyber blue */
+  --site-title: 'AI Skills Showcase';
+  --bg-base: var(--white);
+  --bg-surface: #F2F2ED;
+  --bg-elevated: #F5F5F0;
+  --near-black: oklch(8% 0.015 130);          /* Brand-tinted near-black for large areas */
+  --near-black-bg: oklch(12% 0.02 130);        /* Slightly lighter for surface fills */
+  --near-white: oklch(99% 0 0);                /* Brand-tinted near-white for text on dark */
+  --black: #000000;                            /* Pure black for neo-brutalist borders/shadows */
+  --white: #FFFFFF;                            /* Pure white for bg-base */
+  --gray-200: #F0F0EC;                         /* Card tag background */
+  --gray-400: #bbb;                            /* Subtle borders */
+  --gray-600: #999;                            /* Muted borders */
+  --border-thick: 3px solid var(--near-black);
+  --shadow-hard: 4px 4px 0px var(--near-black);
+  --shadow-hard-lg: 6px 6px 0px var(--near-black);
+  --shadow-accent: 4px 4px 0px var(--near-black);
+  --shadow-pink: 4px 4px 0px var(--brand-secondary);
+  --text-primary: var(--near-black);
+  --text-secondary: #1F1F1F;   /* WCAG AA: 15.4:1 on white, 13.7:1 on elevated */
+  --text-muted: #555555;       /* WCAG AA: 7.5:1 on white, 6.6:1 on elevated */
+  --font-display: 'Archivo Black', 'Space Grotesk', sans-serif;
+  --font-body: 'Space Grotesk', sans-serif;
+  --font-mono: 'Space Mono', monospace;
+  --radius-brutal: 4px;
+  --radius-none: 0px;
+
+  --cat-design: #BFFF00;
+  --cat-reasoning: #08F7FE;
+  --cat-development: #00FF9D;
+  --cat-content: #FF2E63;
+  --cat-strategy: #FFE600;
+  --cat-system: #A8B2D8;
+  --cat-data: #64FFDA;
+  --cat-creative: #FF9FF3;
+  --cat-mcp: #C77DFF;
+  --cat-agents: #FF6B35;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  font-family: var(--font-body);
+  background: var(--bg-base);
+  color: var(--text-primary);
+  line-height: 1.6;
+  overflow-x: hidden;
+  min-height: 100vh;
+  position: relative;
+}
+
+/* ===== GRAIN OVERLAY ===== */
+body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: 9998;
+  pointer-events: none;
+  opacity: 0.015;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+  background-size: 256px 256px;
+}
+
+/* ===== GRID BACKGROUND ===== */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background-image:
+    linear-gradient(rgba(0,0,0,0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,0,0,0.04) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
+
+/* ===== SCROLL PROGRESS BAR ===== */
+#progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 4px;
+  background: var(--brand-primary);
+  z-index: 9999;
+  border-bottom: 2px solid var(--black);
+}
+
+/* ===== HERO SECTION ===== */
+.hero {
+  position: relative;
+  min-height: 100svh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding: 2rem;
+  background: var(--bg-base);
+}
+
+/* Brutalist color blocks */
+.hero-block-left {
+  position: absolute;
+  top: 0; left: 0;
+  width: 40%; height: 100%;
+  background: linear-gradient(135deg, rgba(0,0,0,0.03), transparent);
+  clip-path: polygon(0 0, 100% 0, 70% 100%, 0 100%);
+  z-index: 0;
+}
+
+.hero-block-right {
+  position: absolute;
+  top: 0; right: 0;
+  width: 35%; height: 100%;
+  background: linear-gradient(225deg, rgba(0,0,0,0.03), transparent);
+  clip-path: polygon(30% 0, 100% 0, 100% 100%, 0 100%);
+  z-index: 0;
+}
+
+/* Glitch scanlines */
+.hero-scanlines {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  background: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 2px,
+    rgba(0,0,0,0.02) 2px,
+    rgba(0,0,0,0.02) 4px
+  );
+}
+
+.hero-content {
+  position: relative;
+  z-index: 3;
+  text-align: center;
+  max-width: clamp(320px, 90vw, 960px);
+  width: 100%;
+}
+
+/* Sticker badge */
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--brand-primary);
+  color: var(--black);
+  border: 3px solid var(--black);
+  box-shadow: 4px 4px 0 var(--black);
+  padding: 0.5rem 1.5rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-family: var(--font-mono);
+  margin-bottom: 2rem;
+  transform: rotate(-2deg);
+}
+
+.hero-badge .dot {
+  width: 8px; height: 8px;
+  background: var(--near-black);
+  border-radius: 50%;
+  animation: blink-dot 1s steps(1) infinite;
+}
+
+@keyframes blink-dot {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+/* Glitch title */
+.hero-title {
+  font-family: var(--font-display);
+  font-size: clamp(3rem, 9vw, 7.5rem);
+  font-weight: 900;
+  line-height: 0.95;
+  letter-spacing: -0.02em;
+  margin-bottom: 1.5rem;
+  color: var(--black);
+  text-shadow: 3px 3px 0 var(--brand-secondary);
+  -webkit-text-stroke: 2px var(--black);
+  paint-order: stroke fill;
+  position: relative;
+}
+
+.hero-title .char {
+  display: inline-block;
+  will-change: transform, opacity;
+}
+
+.hero-title .char:hover {
+  color: var(--brand-secondary);
+  text-shadow: 3px 3px 0 var(--brand-primary);
+}
+
+/* Glitch effect pseudo-elements */
+.hero-title::before,
+.hero-title::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
+  -webkit-text-stroke: inherit;
+  paint-order: inherit;
+  overflow: hidden;
+}
+
+.hero-title::before {
+  color: var(--brand-tertiary);
+  text-shadow: none;
+  -webkit-text-stroke: 0;
+  clip-path: inset(0 0 65% 0);
+  animation: glitch-top 3s steps(1) infinite;
+}
+
+.hero-title::after {
+  color: var(--brand-secondary);
+  text-shadow: none;
+  -webkit-text-stroke: 0;
+  clip-path: inset(65% 0 0 0);
+  animation: glitch-bottom 2.5s steps(1) infinite;
+}
+
+@keyframes glitch-top {
+  0%, 92% { transform: translate(0); }
+  93% { transform: translate(-4px, -2px); }
+  94% { transform: translate(3px, 1px); }
+  95% { transform: translate(-2px, -1px); }
+  96%, 100% { transform: translate(0); }
+}
+
+@keyframes glitch-bottom {
+  0%, 90% { transform: translate(0); }
+  91% { transform: translate(3px, 2px); }
+  92% { transform: translate(-4px, -1px); }
+  93% { transform: translate(2px, 1px); }
+  94%, 100% { transform: translate(0); }
+}
+
+.hero-subtitle {
+  font-family: var(--font-mono);
+  font-size: clamp(0.9rem, 2vw, 1.15rem);
+  color: var(--text-secondary);
+  font-weight: 400;
+  max-width: clamp(280px, 85vw, 600px);
+  margin: 0 auto 2.5rem;
+  line-height: 1.8;
+  background: var(--bg-surface);
+  border: 2px solid var(--black);
+  padding: 1rem 1.5rem;
+  text-align: left;
+  position: relative;
+}
+
+.hero-subtitle::before {
+  content: '>';
+  color: var(--black);
+  font-weight: 700;
+  margin-right: 0.5rem;
+  animation: cursor-blink 1s steps(1) infinite;
+}
+
+@keyframes cursor-blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
+
+/* Brutalist CTA */
+.hero-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: var(--brand-secondary);
+  color: var(--black);
+  border: 3px solid var(--black);
+  box-shadow: 5px 5px 0 var(--black);
+  padding: 1rem 2.5rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  font-family: var(--font-display);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  transform: rotate(1deg);
+}
+
+.hero-cta:hover {
+  transform: rotate(-1deg) translate(-2px, -2px);
+  box-shadow: 7px 7px 0 var(--black);
+}
+
+.hero-cta:active {
+  transform: rotate(1deg) translate(2px, 2px);
+  box-shadow: 2px 2px 0 var(--black);
+}
+
+.hero-cta svg {
+  width: 18px; height: 18px;
+}
+
+/* Hero featured card — brutalist panel */
+.hero-card {
+  position: relative;
+  margin-top: 3rem;
+  background: var(--bg-elevated);
+  border: 3px solid var(--black);
+  box-shadow: 6px 6px 0 var(--brand-primary);
+  padding: 2rem;
+  text-align: left;
+  max-width: clamp(280px, 85vw, 560px);
+  margin-left: auto;
+  margin-right: auto;
+  transform: rotate(-1deg);
+}
+
+.hero-card-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  display: inline-block;
+  background: var(--brand-primary);
+  border: 3px solid var(--black);
+  padding: 0.5rem;
+  box-shadow: 3px 3px 0 var(--black);
+}
+
+.hero-card-name {
+  font-family: var(--font-display);
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+  color: var(--black);
+  text-shadow: 2px 2px 0 rgba(0,0,0,0.1);
+}
+
+.hero-card-desc {
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  margin-bottom: 1rem;
+  line-height: 1.8;
+}
+
+.hero-card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.hero-card-tag {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  font-weight: 700;
+  padding: 0.3rem 0.7rem;
+  background: var(--white);
+  border: 2px solid var(--black);
+  color: var(--black);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* Orbit stickers */
+.hero-orbit {
+  position: absolute;
+  top: 50%; left: 50%;
+  width: 500px; height: 500px;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.orbit-badge {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: var(--bg-elevated);
+  border: 2px solid var(--black);
+  box-shadow: 3px 3px 0 var(--brand-secondary);
+  padding: 0.4rem 1rem;
+  font-size: 0.7rem;
+  font-weight: 700;
+  font-family: var(--font-mono);
+  color: var(--black);
+  white-space: nowrap;
+  text-transform: uppercase;
+}
+
+.orbit-badge:nth-child(2) { transform: rotate(3deg); }
+.orbit-badge:nth-child(3) { transform: rotate(-2deg); }
+
+/* ===== MARQUEE TICKER — WCAG AA COMPLIANT ===== */
+.marquee {
+  background: var(--near-black-bg);
+  border-top: 3px solid var(--brand-primary);
+  border-bottom: 3px solid var(--brand-primary);
+  padding: 0.6rem 0;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.marquee-inner {
+  display: inline-flex;
+  animation: marquee-scroll 30s linear infinite;
+}
+
+.marquee-inner span {
+  font-family: var(--font-display);
+  font-size: 0.9rem;
+  color: var(--brand-primary);
+  padding: 0 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+@keyframes marquee-scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* ===== FILTER BAR ===== */
+.filter-section {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--bg-base);
+  border-bottom: 3px solid var(--black);
+  padding: 0.75rem 2rem;
+}
+
+.filter-row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.filter-chips {
+  display: flex;
+  gap: 0.4rem;
+  overflow-x: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  flex: 1;
+  padding: 0.25rem 0;
+}
+
+.filter-chips::-webkit-scrollbar { display: none; }
+
+.filter-chip {
+  flex-shrink: 0;
+  padding: 0.4rem 1rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  font-family: var(--font-mono);
+  border: 2px solid var(--black);
+  background: var(--white);
+  color: var(--black);
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: all 0.15s ease;
+  white-space: nowrap;
+}
+
+.filter-chip:hover {
+  background: var(--chip-color, var(--brand-primary));
+  color: var(--black);
+}
+
+.filter-chip:focus-visible {
+  outline: 3px solid var(--brand-primary);
+  outline-offset: 2px;
+}
+
+.filter-chip.active {
+  background: var(--chip-color, var(--brand-primary));
+  color: var(--black);
+  border-color: var(--black);
+  box-shadow: 3px 3px 0 var(--black);
+  transform: rotate(-1deg);
+}
+
+.search-wrapper {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.search-icon {
+  position: absolute;
+  left: 0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 14px; height: 14px;
+  color: var(--text-muted);
+  pointer-events: none;
+}
+
+.search-input {
+  width: 200px;
+  padding: 0.5rem 1rem;
+  padding-left: 2.2rem;
+  border: 2px solid var(--black);
+  background: var(--white);
+  color: var(--black);
+  font-size: 0.85rem;
+  font-family: var(--font-mono);
+  outline: none;
+  transition: box-shadow 0.15s ease;
+}
+
+.search-input:focus {
+  box-shadow: 3px 3px 0 var(--brand-primary);
+}
+
+.search-input::placeholder {
+  color: var(--text-muted);
+}
+
+.sort-select {
+  flex-shrink: 0;
+  padding: 0.5rem 2rem 0.5rem 1rem;
+  border: 2px solid var(--black);
+  background: var(--white);
+  color: var(--black);
+  font-size: 0.85rem;
+  font-family: var(--font-mono);
+  outline: none;
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='%23000' viewBox='0 0 16 16'%3E%3Cpath d='M8 11L3 6h10z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.75rem center;
+}
+
+.sort-select:focus {
+  box-shadow: 3px 3px 0 var(--brand-primary);
+}
+
+.clear-filters-btn {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.5rem 0.8rem;
+  background: var(--bg-surface);
+  border: 2px solid var(--brand-secondary);
+  color: var(--brand-secondary);
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.15s ease;
+}
+.clear-filters-btn:hover {
+  background: var(--brand-secondary);
+  color: var(--near-white);
+}
+.clear-filters-btn:focus-visible {
+  outline: 3px solid var(--brand-primary);
+  outline-offset: 2px;
+}
+
+.kbd-hint {
+  position: fixed;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 999;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  background: var(--bg-surface);
+  padding: 0.4rem 0.8rem;
+  border: 1px solid var(--border-subtle);
+  border-radius: 6px;
+  opacity: 0.6;
+  pointer-events: none;
+  transition: opacity 0.3s;
+  white-space: nowrap;
+}
+.kbd-hint kbd {
+  display: inline-block;
+  padding: 0 0.3rem;
+  font-family: var(--font-mono);
+  font-weight: 700;
+  color: var(--brand-primary);
+  background: rgba(191,255,0,0.12);
+  border-radius: 3px;
+  margin: 0 1px;
+}
+.kbd-hint:hover { opacity: 1; }
+.kbd-highlight {
+  outline: 2px solid var(--brand-primary);
+  outline-offset: 3px;
+}
+
+/* ===== SKILLS GRID ===== */
+.skills-section {
+  padding: 3rem 2rem 6rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+@media (min-width: 640px) {
+  .skills-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (min-width: 1024px) {
+  .skills-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+@media (min-width: 1280px) {
+  .skills-grid { grid-template-columns: repeat(4, 1fr); }
+}
+
+/* ===== SKILL CARD — NEO-BRUTALIST ===== */
+skill-card {
+  display: block;
+  background: var(--bg-elevated);
+  border: 3px solid var(--black);
+  box-shadow: 5px 5px 0 var(--black);
+  padding: 1.25rem;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  min-height: 120px;
+  position: relative;
+  overflow: hidden;
+  will-change: transform;
+}
+
+skill-card:hover {
+  transform: translate(-3px, -3px);
+  box-shadow: 8px 8px 0 var(--card-accent, var(--brand-primary));
+}
+
+skill-card.expanded {
+  box-shadow: 6px 6px 0 var(--card-accent, var(--brand-primary));
+}
+
+/* Top accent bar */
+skill-card::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 4px;
+  background: var(--card-accent, var(--brand-primary));
+}
+
+.card-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+
+.card-icon {
+  font-size: 1.75rem;
+  line-height: 1;
+  flex-shrink: 0;
+  background: var(--white);
+  border: 2px solid var(--black);
+  padding: 0.3rem;
+}
+
+.card-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.card-name {
+  font-family: var(--font-display);
+  font-size: 0.95rem;
+  margin-bottom: 0.4rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: var(--black);
+}
+
+.card-category {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.2rem 0.6rem;
+  background: var(--card-accent, var(--brand-primary));
+  color: var(--black);
+  border: 2px solid var(--black);
+  transform: rotate(-1deg);
+}
+
+.card-description {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  line-height: 1.8;
+  margin-top: 0.75rem;
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  /* max-height animated by GSAP in toggle() — no CSS transition to avoid layout thrash */
+}
+
+skill-card.expanded .card-description,
+skill-card:hover .card-description {
+  opacity: 1;
+  max-height: 200px;
+}
+
+.card-details {
+  margin-top: 0.75rem;
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  /* max-height animated by GSAP in toggle() */
+}
+
+skill-card.expanded .card-details {
+  opacity: 1;
+  max-height: 500px;
+}
+
+.card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-bottom: 0.75rem;
+}
+
+.card-tag {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  font-weight: 700;
+  padding: 0.15rem 0.5rem;
+  background: var(--white);
+  border: 1px solid var(--black);
+  color: var(--near-black);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.card-invoke {
+  font-family: var(--font-body);
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+  margin-bottom: 0.75rem;
+  padding: 0.5rem 0.75rem;
+  background: var(--gray-200);
+  border: 1px solid var(--gray-400);
+  border-top: 3px solid var(--card-accent, var(--brand-primary));
+  line-height: 1.6;
+}
+
+.card-invoke strong {
+  color: var(--black);
+}
+
+.card-jsonld-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  font-weight: 700;
+  color: var(--near-black);
+  background: var(--white);
+  border: 2px solid var(--black);
+  padding: 0.3rem 0.7rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: all 0.15s ease;
+}
+
+.card-jsonld-toggle:hover {
+  color: var(--black);
+  border-color: var(--black);
+  box-shadow: 2px 2px 0 var(--brand-primary);
+}
+
+.card-jsonld {
+  margin-top: 0.75rem;
+  font-size: 0.68rem;
+  font-family: var(--font-mono);
+  color: var(--near-black);
+  background: var(--white);
+  border: 2px solid var(--gray-600);
+  padding: 0.75rem;
+  white-space: pre-wrap;
+  word-break: break-all;
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+skill-card.expanded .card-jsonld.visible {
+  max-height: 500px;
+  opacity: 1;
+  visibility: visible;
+}
+
+.card-expand-indicator {
+  position: absolute;
+  bottom: 0.75rem;
+  right: 0.75rem;
+  width: 20px; height: 20px;
+  color: var(--text-muted);
+  transition: transform 0.2s ease;
+}
+
+skill-card.expanded .card-expand-indicator {
+  transform: rotate(180deg);
+  color: var(--brand-primary);
+}
+
+/* ===== NO RESULTS ===== */
+.no-results {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 4rem 2rem;
+  color: var(--text-muted);
+  background: var(--bg-surface);
+  border: 3px dashed var(--black);
+}
+
+.no-results-icon { font-size: 3rem; margin-bottom: 1rem; }
+.no-results-text { font-family: var(--font-display); font-size: 1.1rem; color: var(--text-primary); }
+
+/* ===== SCROLL-TO-TOP FAB ===== */
+.scroll-top-fab {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 52px; height: 52px;
+  background: var(--brand-primary);
+  color: var(--black);
+  border: 3px solid var(--black);
+  box-shadow: 4px 4px 0 var(--black);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  opacity: 0;
+  transform: translateY(20px) rotate(3deg);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  z-index: 200;
+  font-weight: 900;
+}
+
+.scroll-top-fab.visible {
+  opacity: 1;
+  transform: translateY(0) rotate(3deg);
+}
+
+.scroll-top-fab:hover {
+  transform: translateY(-3px) rotate(-2deg);
+  box-shadow: 6px 6px 0 var(--black);
+}
+
+/* ===== SECTION HEADING ===== */
+.section-heading {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.section-heading h2 {
+  font-family: var(--font-display);
+  font-size: clamp(1.8rem, 5vw, 3rem);
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+.skill-count {
+  color: var(--black);
+  -webkit-text-stroke: 0;
+  text-shadow: 2px 2px 0 var(--brand-secondary);
+}
+
+.section-heading p {
+  font-family: var(--font-mono);
+  color: var(--text-muted);
+  font-size: 0.85rem;
+}
+
+/* ===== API NOTICE ===== */
+.api-notice {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 1.5rem 2rem;
+  background: var(--bg-surface);
+  border: 2px solid var(--black);
+  border-top: 4px solid var(--brand-tertiary);
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  line-height: 1.9;
+}
+
+.api-notice strong { color: var(--text-primary); }
+.api-notice code {
+  background: var(--white);
+  border: 1px solid var(--black);
+  padding: 0.1rem 0.4rem;
+  color: var(--black);
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+  text-align: center;
+  padding: 3rem 2rem;
+  border-top: 3px solid var(--black);
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.footer span { color: var(--brand-secondary); font-weight: 700; }
+.footer .brand-lime { color: var(--brand-primary); background: var(--near-black); padding: 0.1rem 0.4rem; font-weight: 700; }
+
+/* ===== REDUCED MOTION — accessibility ===== */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  html { scroll-behavior: auto; }
+  .marquee-inner { animation: none !important; }
+  #hero-orbit { animation: none !important; }
+  .hero-badge .dot { animation: none !important; opacity: 1; }
+  .typewriter-cursor { animation: none !important; }
+  skill-card { transition: none !important; }
+  skill-card:hover { transform: none !important; }
+}
+
+/* ===== EMBED MODE (?embed=true) ===== */
+body.embed-mode .hero,
+body.embed-mode .marquee,
+body.embed-mode .hero-orbit,
+body.embed-mode .scroll-top-fab,
+body.embed-mode #progress-bar {
+  display: none !important;
+}
+
+body.embed-mode .filter-section {
+  position: relative;
+  border-top: 3px solid var(--black);
+}
+
+body.embed-mode .skills-section {
+  padding-top: 1.5rem;
+}
+
+/* ===== MOBILE OVERRIDES ===== */
+@media (max-width: 639px) {
+  .hero { padding: 1.5rem 1rem; }
+  .hero-card { transform: rotate(0deg); padding: 1.5rem; }
+  .hero-cta { transform: rotate(0deg); }
+  .filter-section { padding: 0.5rem 1rem; }
+  .filter-row { gap: 0.4rem; }
+  .search-input { width: 100%; }
+  .search-wrapper { width: 100%; }
+  .skills-section { padding: 2rem 1rem 4rem; }
+  .hero-orbit { display: none; }
+  .hero-title { -webkit-text-stroke: 1px var(--black); }
+  .hero-badge { transform: rotate(0deg); }
+  .api-notice { margin: 0 1rem; padding: 1rem; }
+  skill-card { cursor: pointer; }
+}
+
+/* ===== UTILITY ===== */
+.sr-only {
+  position: absolute;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  white-space: nowrap;
+  border-width: 0;
+}
+</style>
+</head>
+<body>
+
+<!-- Scroll Progress Bar -->
+<div id="progress-bar" role="progressbar" aria-label="Reading progress"></div>
+
+<!-- ===== HERO SECTION ===== -->
+<section class="hero" id="hero" aria-label="Hero section featuring the ui-ux-pro-max-v7 skill">
+  <div class="hero-block-left" aria-hidden="true"></div>
+  <div class="hero-block-right" aria-hidden="true"></div>
+  <div class="hero-scanlines" aria-hidden="true"></div>
+
+  <!-- Orbit stickers -->
+  <div class="hero-orbit" id="hero-orbit" aria-hidden="true">
+    <div class="orbit-badge" id="orbit-1">&#9670; 24 PATTERNS</div>
+    <div class="orbit-badge" id="orbit-2">&#9733; 60 STYLES</div>
+    <div class="orbit-badge" id="orbit-3">&#9830; PRODUCTION</div>
+  </div>
+
+  <div class="hero-content">
+    <div class="hero-badge" id="hero-badge">
+      <span class="dot"></span>
+      <span>HERO SKILL</span>
+    </div>
+
+    <h1 class="hero-title" id="hero-title" data-text="ui-ux-pro-max-v7">ui-ux-pro-max-v7</h1>
+
+    <p class="hero-subtitle" id="hero-subtitle">
+      AI design intelligence — 60 styles, 48 palettes, 36 fonts, 24 industry rules, production-grade components. The most comprehensive design skill in the collection.
+    </p>
+
+    <button class="hero-cta" id="hero-cta" aria-label="Explore all skills">
+      <span>EXPLORE ALL SKILLS</span>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M19 12l-7 7-7-7"/></svg>
+    </button>
+
+    <div class="hero-card" id="hero-card">
+      <div class="hero-card-icon">&#127912;</div>
+      <div class="hero-card-name">ui-ux-pro-max-v7</div>
+      <div class="hero-card-desc">The definitive AI design skill — covering 60 design styles, 48 color palettes, 36 font pairings, 24 industry-specific design rules, and production-ready component generation. Handles wireframes, high-fidelity mockups, design systems, and responsive layouts.</div>
+      <div class="hero-card-tags">
+        <span class="hero-card-tag">Design Systems</span>
+        <span class="hero-card-tag">UI/UX</span>
+        <span class="hero-card-tag">Production</span>
+        <span class="hero-card-tag">Components</span>
+        <span class="hero-card-tag">Palettes</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== MARQUEE TICKER ===== -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-inner" id="marquee-inner">
+    <!-- Filled by JS -->
+  </div>
+</div>
+
+<!-- ===== FILTER BAR ===== -->
+<nav class="filter-section" id="filter-section" aria-label="Skill filters">
+  <div class="filter-row">
+    <div class="filter-chips" id="filter-chips" role="tablist" aria-label="Filter by category">
+      <!-- Chips generated by JS -->
+    </div>
+    <div class="search-wrapper">
+      <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+      <input type="search" class="search-input" id="search-input" placeholder="SEARCH SKILLS..." aria-label="Search skills by name or tag">
+    </div>
+    <select class="sort-select" id="sort-select" aria-label="Sort skills">
+      <option value="alpha">A → Z</option>
+      <option value="category">CATEGORY</option>
+      <option value="recent">RECENT</option>
+    </select>
+    <button class="clear-filters-btn" id="clear-filters-btn" aria-label="Clear all filters">✕ CLEAR</button>
+  </div>
+</nav>
+
+<!-- ===== SKILLS GRID ===== -->
+<main class="skills-section" id="skills-section">
+  <div class="section-heading" id="section-heading">
+    <h2><span class="skill-count" id="skill-count">48</span> ACTIVE SKILLS</h2>
+    <p>10 categories // design // development // reasoning // content // strategy // system // data // creative // mcp servers // agent modes</p>
+  </div>
+  <div class="skills-grid" id="skills-grid" role="list" aria-label="Skills grid">
+    <!-- Skill cards generated by JS -->
+  </div>
+</main>
+
+<!-- ===== API NOTICE ===== -->
+<div class="api-notice" id="api-notice">
+<strong>ENDPOINTS:</strong> <code>?format=json</code> raw JSON &nbsp;|&nbsp; <code>?format=manifest</code> plugin.xml &nbsp;|&nbsp; <code>?skill=gsap-animations</code> auto-filter &nbsp;|&nbsp; <code>?category=Development</code> category filter &nbsp;|&nbsp; <code>?embed=true</code> iframe-ready &nbsp;|&nbsp; <code>?palette=FF2E63</code> live theme
+  <br><strong>VERSION:</strong> <code>v5.0.2</code> &nbsp;|&nbsp; <strong>UPDATED:</strong> <code>2026-05-25</code> &nbsp;|&nbsp; WCAG AA contrast &nbsp;|&nbsp; JSON-LD in <code>&lt;head&gt;</code> &nbsp;|&nbsp; GitHub Pages ready
+</div>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer" id="site-footer">
+  Built with <span class="brand-lime">ui-ux-pro-max-v7</span> + <span>gsap-animations</span> + <span>anthropic-frontend-design</span> + <span>frontend-design</span> // 48 skills // 10 categories // v5.0.2
+</footer>
+
+<!-- Scroll-to-top FAB -->
+<button class="scroll-top-fab" id="scroll-top-fab" aria-label="Scroll to top">
+  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M18 15l-6-6-6 6"/></svg>
+</button>
+
+<script>
+// ===== VERSIONING — LIVING STANDARD =====
+const SKILLS_VERSION = '5.0.2';
+const SKILLS_LAST_UPDATED = '2026-05-19';
+
+// ===== MACHINE-READABLE ENDPOINTS =====
+// ?format=json — raw JSON of all skills
+// ?format=manifest — JetBrains-style plugin.xml for AI IDE auto-discovery
+(function() {
+  const params = new URLSearchParams(window.location.search);
+  const fmt = params.get('format');
+  if (fmt === 'json' || fmt === 'manifest') {
+    const data = getSkillsDataRaw();
+    if (fmt === 'json') {
+      document.head.innerHTML = '<meta charset="UTF-8"><title>Skills API — JSON</title>';
+      document.body.innerHTML = '';
+      document.body.style.cssText = 'background:#0a0a0a;color:#fff;font-family:monospace;padding:2rem;white-space:pre;';
+      document.body.textContent = JSON.stringify({ version: SKILLS_VERSION, lastUpdated: SKILLS_LAST_UPDATED, count: data.length, skills: data }, null, 2);
+      throw new Error('JSON_ENDPOINT');
+    }
+    if (fmt === 'manifest') {
+      const xml = generatePluginXml(data);
+      document.head.innerHTML = '<meta charset="UTF-8"><title>Skills Manifest — plugin.xml</title>';
+      document.body.innerHTML = '';
+      document.body.style.cssText = 'background:#0a0a0a;color:#fff;font-family:monospace;padding:2rem;white-space:pre;';
+      document.body.textContent = xml;
+      throw new Error('MANIFEST_ENDPOINT');
+    }
+  }
+})();
+
+function getSkillsDataRaw() {
+  return [
+    // Design & UI
+    { name: "ui-ux-pro-max-v7", category: "Design & UI", description: "AI design intelligence — 60 styles, 48 palettes, 36 fonts, 24 industry rules, production-grade components", icon: "\u{1F3A8}", invoke: "Use when designing UIs, building design systems, or creating production-grade components", tags: ["design","ui","ux","components","palettes","fonts"], accent: "#BFFF00" },
+    { name: "anthropic-frontend-design", category: "Design & UI", description: "Bold aesthetics for AI-native interfaces, conversational UI, trust-forward design", icon: "\u{1F3AF}", invoke: "Use when building AI-native or conversational interfaces", tags: ["ai","frontend","trust","conversational"], accent: "#BFFF00" },
+    { name: "gsap-animations", category: "Design & UI", description: "Production-grade GSAP animation patterns — 24 patterns, ScrollTrigger, Flip plugin, React integration", icon: "\u{1F3AC}", invoke: "Use when building animations, scroll effects, or motion design", tags: ["gsap","animation","scroll","motion","react"], accent: "#BFFF00" },
+    { name: "frontend-design", category: "Design & UI", description: "shadcn/ui + Tailwind + React component generation for production-ready UI", icon: "\u{1F5A5}", invoke: "Use when generating React components with shadcn/ui and Tailwind", tags: ["shadcn","tailwind","react","components"], accent: "#BFFF00" },
+    { name: "vercel-web-design-guidelines", category: "Design & UI", description: "Comprehensive accessibility-first UX rules and performance budgets", icon: "\u{267F}", invoke: "Use when auditing accessibility or setting performance budgets", tags: ["accessibility","ux","performance","guidelines"], accent: "#BFFF00" },
+
+    // Reasoning
+    { name: "chain-of-thought", category: "Reasoning", description: "Step-by-step reasoning framework for complex problems", icon: "\u{1F9E0}", invoke: "Use when solving complex, multi-step problems requiring explicit reasoning", tags: ["reasoning","logic","step-by-step","analysis"], accent: "#08F7FE" },
+    { name: "socratic-method", category: "Reasoning", description: "Strategic questioning to uncover assumptions and guide discovery", icon: "\u{2753}", invoke: "Use when coaching, teaching, or guiding someone to discover answers themselves", tags: ["questioning","coaching","teaching","discovery"], accent: "#08F7FE" },
+    { name: "devils-advocate", category: "Reasoning", description: "Argue against premises to strengthen arguments and prevent confirmation bias", icon: "\u{1F525}", invoke: "Use when testing assumptions, strengthening arguments, or avoiding groupthink", tags: ["debate","bias","arguments","critical-thinking"], accent: "#08F7FE" },
+    { name: "simulation-sandbox", category: "Reasoning", description: "Test scenarios in safe simulated environments without real-world consequences", icon: "\u{1F3AE}", invoke: "Use when testing decisions or exploring scenarios risk-free", tags: ["simulation","testing","scenarios","risk"], accent: "#08F7FE" },
+
+    // Development
+    { name: "mcp-builder", category: "Development", description: "Build MCP servers with TypeScript + Python, full lifecycle planning", icon: "\u{1F527}", invoke: "Use when building MCP servers or tool integrations", tags: ["mcp","typescript","python","servers"], accent: "#00FF9D" },
+    { name: "superpowers", category: "Development", description: "Spec-first development with TDD and sub-agent delegation", icon: "\u26A1", invoke: "Use when doing spec-first development or delegating to sub-agents", tags: ["tdd","spec","delegation","development"], accent: "#00FF9D" },
+    { name: "deployment-manager", category: "Development", description: "Deploy, monitor, update across GitHub Pages, Vercel, Netlify", icon: "\u{1F680}", invoke: "Use when deploying applications or managing infrastructure", tags: ["deploy","vercel","netlify","github-pages"], accent: "#00FF9D" },
+    { name: "browser-use", category: "Development", description: "Headful browser automation with natural language control", icon: "\u{1F310}", invoke: "Use when automating browser tasks with natural language commands", tags: ["browser","automation","playwright","testing"], accent: "#00FF9D" },
+    { name: "web-artifacts-builder", category: "Development", description: "Single-file HTML artifacts with React + Tailwind, zero dependencies", icon: "\u{1F4E6}", invoke: "Use when creating self-contained HTML artifacts or demos", tags: ["artifacts","html","react","tailwind"], accent: "#00FF9D" },
+    { name: "vercel-react-best-practices", category: "Development", description: "Production-grade React architecture, hooks patterns, SSR/SSG strategies", icon: "\u269B", invoke: "Use when architecting React apps or optimizing performance", tags: ["react","architecture","ssr","performance"], accent: "#00FF9D" },
+    { name: "explained-code", category: "Development", description: "Beginner-friendly code explanation with analogies and diagrams", icon: "\u{1F4D6}", invoke: "Use when explaining code to beginners or creating educational content", tags: ["explanation","education","analogies","diagrams"], accent: "#00FF9D" },
+
+    // Content
+    { name: "seo-content-writer", category: "Content", description: "SEO-optimized content creation with GEO optimization for AI answer engines", icon: "\u{270D}", invoke: "Use when writing SEO content or optimizing for AI answer engines", tags: ["seo","content","geo","writing"], accent: "#FF2E63" },
+    { name: "humanizer", category: "Content", description: "Strip AI writing patterns for human-like copy — anti-AI-detection rewriting", icon: "\u{1F9D1}", invoke: "Use when rewriting AI-generated text to sound more human", tags: ["humanize","writing","anti-detection","rewriting"], accent: "#FF2E63" },
+    { name: "social-media-manager", category: "Content", description: "Platform-appropriate post generation for 30 days across LinkedIn, Twitter, Instagram, TikTok", icon: "\u{1F4F1}", invoke: "Use when generating social media content calendars or posts", tags: ["social-media","content","calendar","posts"], accent: "#FF2E63" },
+    { name: "social-content-pillars", category: "Content", description: "Monthly content calendar for multi-brand social media with 90-day editorial plan", icon: "\u{1F4CA}", invoke: "Use when planning multi-brand social media content strategy", tags: ["content","strategy","calendar","editorial"], accent: "#FF2E63" },
+
+    // Strategy
+    { name: "jtbd-research", category: "Strategy", description: "8-step Jobs to be Done product research methodology", icon: "\u{1F50D}", invoke: "Use when conducting product research using the JTBD framework", tags: ["jtbd","research","product","methodology"], accent: "#FFE600" },
+    { name: "gumroad-pipeline", category: "Strategy", description: "Lead magnet to funnel to product launch workflow for digital products", icon: "\u{1F6D2}", invoke: "Use when setting up a digital product sales funnel", tags: ["funnel","gumroad","launch","digital-products"], accent: "#FFE600" },
+    { name: "feature-research", category: "Strategy", description: "Research existing architecture before implementing a complex feature", icon: "\u{1F4C8}", invoke: "Use when researching before building a new feature", tags: ["research","architecture","feature","planning"], accent: "#FFE600" },
+    { name: "skill-finder", category: "Strategy", description: "Skill discovery, evaluation, and installation meta-skill with security vetting", icon: "\u{1F50E}", invoke: "Use when finding, evaluating, or installing new skills", tags: ["skills","evaluation","installation","security"], accent: "#FFE600" },
+
+    // System
+    { name: "persistent-memory", category: "System", description: "Structured memory system for agent context continuity", icon: "\u{1F9E0}", invoke: "Use when maintaining context across sessions or conversations", tags: ["memory","context","persistence","continuity"], accent: "#A8B2D8" },
+    { name: "system-prompt-sync", category: "System", description: "Auto-sync AGENTS.md across all git repos on version tags", icon: "\u{1F504}", invoke: "Use when synchronizing system prompts across repositories", tags: ["sync","git","agents","automation"], accent: "#A8B2D8" },
+    { name: "feedback-loop", category: "System", description: "Iterative improvement cycles from metrics to research", icon: "\u{1F501}", invoke: "Use when implementing iterative improvement processes", tags: ["feedback","metrics","improvement","iteration"], accent: "#A8B2D8" },
+    { name: "context-compressor", category: "System", description: "Compress long contexts preserving critical information", icon: "\u{1F5C2}", invoke: "Use when reducing context length while keeping essential information", tags: ["compression","context","optimization","tokens"], accent: "#A8B2D8" },
+    { name: "agent-roles", category: "System", description: "Unified multi-agent role system — Builder, Coder, Council, Orchestrator, Plan, Researcher, Reviewer, Scribe", icon: "\u{1F465}", invoke: "Use when coordinating multi-agent workflows with role delegation", tags: ["agents","roles","orchestration","delegation"], accent: "#A8B2D8" },
+    { name: "sample-hello-skill", category: "System", description: "Hello-world demo skill for testing skill activation and validation", icon: "\u{1F44B}", invoke: "Use when testing the skill system or validating installation", tags: ["demo","test","validation","hello"], accent: "#A8B2D8" },
+
+    // Data & Web
+    { name: "web-reader", category: "Data & Web", description: "Web page extraction with site crawling and spidering capabilities", icon: "\u{1F578}", invoke: "Use when extracting content from web pages or crawling sites", tags: ["web","scraping","crawling","extraction"], accent: "#64FFDA" },
+    { name: "audit-analyzer", category: "Data & Web", description: "Detect and prioritize audit issues — performance, accessibility, monitoring", icon: "\u{1F4CB}", invoke: "Use when auditing websites for performance, accessibility, or monitoring issues", tags: ["audit","performance","accessibility","monitoring"], accent: "#64FFDA" },
+    { name: "web-design-guidelines", category: "Data & Web", description: "Quick self-audit checklist for design consistency — typography, color, spacing, accessibility", icon: "\u{1F3A8}", invoke: "Use when self-auditing design consistency across a project", tags: ["design","guidelines","audit","consistency"], accent: "#64FFDA" },
+    { name: "code-research", category: "Data & Web", description: "Research open-source repositories to understand how something is built", icon: "\u{1F4DA}", invoke: "Use when researching open-source code to understand implementation patterns", tags: ["research","codebase","open-source","patterns"], accent: "#64FFDA" },
+    { name: "explore", category: "Data & Web", description: "Search a codebase using codebase_search tool — saves time and tokens over grep", icon: "\u{1F50D}", invoke: "Use when searching a codebase efficiently without grep", tags: ["search","codebase","explore","efficiency"], accent: "#64FFDA" },
+
+    // Creative
+    { name: "photography-ai", category: "Creative", description: "Professional visual engineering framework with batch processing, prompt engineering, cinematic sequences", icon: "\u{1F4F7}", invoke: "Use when creating photography or visual content with AI assistance", tags: ["photography","visual","prompt","cinematic"], accent: "#FF9FF3" },
+    { name: "output-formatter", category: "Creative", description: "Strict formatting rules for all output types — JSON, tables, markdown", icon: "\u{1F4DD}", invoke: "Use when enforcing consistent formatting across outputs", tags: ["formatting","json","tables","markdown"], accent: "#FF9FF3" },
+
+    // MCP Servers
+    { name: "pictoflux-ai", category: "MCP Servers", description: "Free unlimited AI image generation via MCP protocol — text-to-image, style transfer, batch generation", icon: "\u{1F308}", invoke: "Use when generating images, creating visual content, or building AI-powered image workflows via MCP", tags: ["mcp","image-generation","ai-art","visual","free","unlimited"], accent: "#C77DFF" },
+    { name: "mcp-stack-curator", category: "MCP Servers", description: "Intelligent MCP server stack builder — recommends optimal 4-server combinations with synergy and mismatch analysis", icon: "\u{1F9E9}", invoke: "Use when deciding which MCP servers to combine, analyzing server compatibility, or building custom MCP stacks", tags: ["mcp","stack","curator","synergy","compatibility"], accent: "#C77DFF" },
+    { name: "mcp-registry", category: "MCP Servers", description: "Curated directory of 105+ free MCP servers across 14 categories with deduplication and ratings", icon: "\u{1F4CA}", invoke: "Use when discovering, comparing, or evaluating free MCP servers across categories", tags: ["mcp","registry","directory","servers","ratings"], accent: "#C77DFF" },
+    { name: "mcp-security-scanner", category: "MCP Servers", description: "Security-first vetting for MCP server installations — red flag detection, permission auditing, scope analysis", icon: "\u{1F6E1}", invoke: "Use when auditing MCP server security, checking permissions, or scanning for vulnerabilities before installation", tags: ["mcp","security","audit","vulnerability","permissions"], accent: "#C77DFF" },
+
+    // Agent Modes
+    { name: "rabbit-multiply-ideas", category: "Agent Modes", description: "Take an idea and multiply it into 10 different variations — change the angle, audience, and format for each", icon: "\u{1F407}", invoke: "Use when brainstorming variations, exploring different angles of an idea, or generating multiple creative directions", tags: ["multiply","variations","brainstorm","ideation","creativity"], accent: "#FF6B35" },
+    { name: "owl-deep-analysis", category: "Agent Modes", description: "Think like an owl — slow, observant and analytical. Examine from multiple perspectives and identify hidden factors", icon: "\u{1F989}", invoke: "Use when conducting deep analysis, examining hidden factors, or studying a problem from multiple perspectives", tags: ["analysis","observation","perspectives","hidden-factors","deep-thinking"], accent: "#FF6B35" },
+    { name: "ant-break-into-steps", category: "Agent Modes", description: "Break goals into the smallest possible steps someone could realistically complete", icon: "\u{1F41C}", invoke: "Use when breaking down complex goals, creating action plans, or decomposing tasks into manageable steps", tags: ["steps","decomposition","planning","actionable","micro-tasks"], accent: "#FF6B35" },
+    { name: "eagle-big-picture", category: "Agent Modes", description: "See the long-term strategy — explain how all the pieces connect from a bird's-eye view", icon: "\u{1F985}", invoke: "Use when mapping strategy, understanding how components connect, or planning long-term direction", tags: ["strategy","big-picture","long-term","connections","vision"], accent: "#FF6B35" },
+    { name: "dolphin-creative-solutions", category: "Agent Modes", description: "Generate curious, playful, and inventive solutions that most people wouldn't normally consider", icon: "\u{1F42C}", invoke: "Use when seeking creative solutions, thinking outside the box, or generating unconventional approaches", tags: ["creative","inventive","playful","unconventional","solutions"], accent: "#FF6B35" },
+    { name: "beaver-build-systems", category: "Agent Modes", description: "Design practical systems that solve problems step by step, like a beaver building a dam", icon: "\u{1F9AB}", invoke: "Use when building systems, creating processes, or designing structured solutions to complex problems", tags: ["systems","process","structure","practical","building"], accent: "#FF6B35" },
+    { name: "elephant-cross-field", category: "Agent Modes", description: "Connect ideas to insights from other fields such as psychology, economics, science, or history", icon: "\u{1F418}", invoke: "Use when finding cross-disciplinary connections, applying insights from other fields, or leveraging analogies", tags: ["cross-field","interdisciplinary","connections","analogies","insights"], accent: "#FF6B35" },
+  ];
+}
+
+const SKILLS_DATA = getSkillsDataRaw();
+
+// ===== PLUGIN XML GENERATOR (for ?format=manifest) =====
+function generatePluginXml(skills) {
+  let xml = '<?xml version="1.0" encoding="UTF-8"?>\n';
+  xml += '<!-- AI Skills Plugin Manifest — Auto-generated -->\n';
+  xml += '<!-- Version: ' + SKILLS_VERSION + ' | Updated: ' + SKILLS_LAST_UPDATED + ' -->\n';
+  xml += '<plugin id="io.agentskills.showcase" version="' + SKILLS_VERSION + '">\n';
+  xml += '  <name>AI Agent Skills Collection</name>\n';
+  xml += '  <description>48 active AI agent skills across 10 categories including Agent Modes and MCP Servers for automated workflows</description>\n';
+  xml += '  <vendor>AgentSkills</vendor>\n';
+  xml += '  <version>' + SKILLS_VERSION + '</version>\n';
+  xml += '  <lastUpdated>' + SKILLS_LAST_UPDATED + '</lastUpdated>\n';
+  xml += '  <extensions defaultExtensionNs="io.agentskills">\n';
+  skills.forEach((s, i) => {
+    xml += '    <skill id="' + s.name + '" order="' + (i+1) + '">\n';
+    xml += '      <name>' + escapeXml(s.name) + '</name>\n';
+    xml += '      <category>' + escapeXml(s.category) + '</category>\n';
+    xml += '      <description>' + escapeXml(s.description) + '</description>\n';
+    xml += '      <invoke>' + escapeXml(s.invoke) + '</invoke>\n';
+    xml += '      <tags>' + s.tags.map(t => '<tag>' + escapeXml(t) + '</tag>').join('') + '</tags>\n';
+    xml += '      <accent>' + s.accent + '</accent>\n';
+    xml += '      <specUrl>https://agentskills.io/skills/' + s.name + '</specUrl>\n';
+    xml += '    </skill>\n';
+  });
+  xml += '  </extensions>\n';
+  xml += '</plugin>';
+  return xml;
+}
+
+function escapeXml(str) {
+  return String(str).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&apos;');
+}
+
+// ===== DYNAMIC PALETTE ENDPOINT (?palette=FF2E63) =====
+// Accepts any hex triplet, generates a full brutalist color system on the fly
+function applyPalette() {
+  const params = new URLSearchParams(window.location.search);
+  const palette = params.get('palette');
+  if (!palette) return;
+
+  const hex = palette.replace('#', '');
+  if (!/^[0-9A-Fa-f]{6}$/.test(hex)) return;
+
+  const r = parseInt(hex.substring(0, 2), 16);
+  const g = parseInt(hex.substring(2, 4), 16);
+  const b = parseInt(hex.substring(4, 6), 16);
+
+  const [h, s, l] = rgbToHsl(r, g, b);
+
+  const root = document.documentElement.style;
+  // Set brand-primary to the requested hex
+  root.setProperty('--brand-primary', '#' + hex);
+
+  // Derive secondary: hue + 180 (complementary), same saturation/lightness
+  const [sr, sg, sb] = hslToRgb((h + 180) % 360, s, Math.min(l + 10, 80));
+  root.setProperty('--brand-secondary', '#' + toHex(sr) + toHex(sg) + toHex(sb));
+
+  // Derive tertiary: hue + 120 (triadic)
+  const [tr, tg, tb] = hslToRgb((h + 120) % 360, s, Math.min(l + 15, 85));
+  root.setProperty('--brand-tertiary', '#' + toHex(tr) + toHex(tg) + toHex(tb));
+
+  // Update marquee border colors (already using var(--brand-primary))
+  // Update progress bar (already using var(--brand-primary))
+  // Category accent colors stay per-skill — they're semantic, not thematic
+}
+
+function rgbToHsl(r, g, b) {
+  r /= 255; g /= 255; b /= 255;
+  const max = Math.max(r, g, b), min = Math.min(r, g, b);
+  let h = 0, s = 0, l = (max + min) / 2;
+  if (max !== min) {
+    const d = max - min;
+    s = l > 0.5 ? d / (2 - max - min) : d / (max + min);
+    switch (max) {
+      case r: h = ((g - b) / d + (g < b ? 6 : 0)) / 6; break;
+      case g: h = ((b - r) / d + 2) / 6; break;
+      case b: h = ((r - g) / d + 4) / 6; break;
+    }
+  }
+  return [h * 360, s * 100, l * 100];
+}
+
+function hslToRgb(h, s, l) {
+  h /= 360; s /= 100; l /= 100;
+  let r, g, b;
+  if (s === 0) {
+    r = g = b = l;
+  } else {
+    const hue2rgb = (p, q, t) => {
+      if (t < 0) t += 1;
+      if (t > 1) t -= 1;
+      if (t < 1/6) return p + (q - p) * 6 * t;
+      if (t < 1/2) return q;
+      if (t < 2/3) return p + (q - p) * (2/3 - t) * 6;
+      return p;
+    };
+    const q = l < 0.5 ? l * (1 + s) : l + s - l * s;
+    const p = 2 * l - q;
+    r = hue2rgb(p, q, h + 1/3);
+    g = hue2rgb(p, q, h);
+    b = hue2rgb(p, q, h - 1/3);
+  }
+  return [Math.round(r * 255), Math.round(g * 255), Math.round(b * 255)];
+}
+
+function toHex(n) {
+  return n.toString(16).padStart(2, '0').toUpperCase();
+}
+
+// ===== EMBED MODE (?embed=true) =====
+// Strips hero, footer, marquee — just filter bar + grid for iframe embedding
+function applyEmbedMode() {
+  const params = new URLSearchParams(window.location.search);
+  if (params.get('embed') === 'true') {
+    document.body.classList.add('embed-mode');
+    // Also hide footer and API notice in embed mode
+    const footer = document.getElementById('site-footer');
+    const apiNotice = document.getElementById('api-notice');
+    if (footer) footer.style.display = 'none';
+    if (apiNotice) apiNotice.style.display = 'none';
+  }
+}
+
+// ===== CATEGORY CONFIG =====
+const CATEGORIES = [
+  { name: "All", color: "#BFFF00" },
+  { name: "Design & UI", color: "#BFFF00" },
+  { name: "Reasoning", color: "#08F7FE" },
+  { name: "Development", color: "#00FF9D" },
+  { name: "Content", color: "#FF2E63" },
+  { name: "Strategy", color: "#FFE600" },
+  { name: "System", color: "#A8B2D8" },
+  { name: "Data & Web", color: "#64FFDA" },
+  { name: "Creative", color: "#FF9FF3" },
+  { name: "MCP Servers", color: "#C77DFF" },
+  { name: "Agent Modes", color: "#FF6B35" },
+];
+
+// ===== WEB COMPONENT: <skill-card> =====
+class SkillCard extends HTMLElement {
+  static get observedAttributes() {
+    return ['name','category','description','icon','invoke','tags'];
+  }
+
+  constructor() {
+    super();
+    this._expanded = false;
+    this._jsonldVisible = false;
+    this._tiltBound = false;
+  }
+
+  connectedCallback() {
+    if (this._tiltBound) return;
+    this._tiltBound = true;
+    this.render();
+    this.bindEvents();
+  }
+
+  get skillData() {
+    return SKILLS_DATA.find(s => s.name === this.getAttribute('name')) || {};
+  }
+
+  render() {
+    const name = this.getAttribute('name') || '';
+    const category = this.getAttribute('category') || '';
+    const description = this.getAttribute('description') || '';
+    const icon = this.getAttribute('icon') || '';
+    const invoke = this.getAttribute('invoke') || '';
+    const tagsStr = this.getAttribute('tags') || '';
+    const tags = tagsStr.split(',').map(t => t.trim()).filter(Boolean);
+    const accent = this.skillData.accent || '#BFFF00';
+
+    this.setAttribute('role', 'listitem');
+    this.setAttribute('tabindex', '0');
+    this.setAttribute('aria-label', `${name} skill — ${category}`);
+    this.style.setProperty('--card-accent', accent);
+
+    this.innerHTML = `
+      <div class="card-header">
+        <span class="card-icon">${icon}</span>
+        <div class="card-info">
+          <div class="card-name">${name}</div>
+          <span class="card-category" style="background:${accent}">${category}</span>
+        </div>
+      </div>
+      <div class="card-description">${description}</div>
+      <div class="card-details">
+        <div class="card-tags">${tags.map(t => `<span class="card-tag">${t}</span>`).join('')}</div>
+        ${invoke ? `<div class="card-invoke"><strong>INVOKE:</strong> ${invoke}</div>` : ''}
+        <button class="card-jsonld-toggle" aria-label="Toggle JSON-LD preview">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          JSON-LD
+        </button>
+        <div class="card-jsonld">${this.generateJsonLd()}</div>
+      </div>
+      <svg class="card-expand-indicator" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+    `;
+  }
+
+  generateJsonLd() {
+    const name = this.getAttribute('name') || '';
+    const category = this.getAttribute('category') || '';
+    const description = this.getAttribute('description') || '';
+    const tagsStr = this.getAttribute('tags') || '';
+    const invoke = this.getAttribute('invoke') || '';
+
+    const jsonLd = {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": name,
+      "applicationCategory": "AISkill",
+      "description": description,
+      "keywords": tagsStr.split(',').map(t => t.trim()).filter(Boolean),
+      "additionalProperty": [
+        { "@type": "PropertyValue", "name": "invoke", "value": invoke },
+        { "@type": "PropertyValue", "name": "category", "value": category },
+        { "@type": "PropertyValue", "name": "skillSpec", "value": "https://agentskills.io/specification" }
+      ]
+    };
+    return JSON.stringify(jsonLd, null, 2);
+  }
+
+  bindEvents() {
+    this.addEventListener('click', (e) => {
+      if (e.target.closest('.card-jsonld-toggle')) {
+        e.stopPropagation();
+        this._jsonldVisible = !this._jsonldVisible;
+        const jsonLdEl = this.querySelector('.card-jsonld');
+        if (jsonLdEl) jsonLdEl.classList.toggle('visible', this._jsonldVisible);
+        return;
+      }
+      this.toggle();
+    });
+
+    this.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        this.toggle();
+      }
+    });
+
+    // Brutalist hover — hard translate instead of 3D tilt
+    const motionOk = window.matchMedia('(prefers-reduced-motion: no-preference)').matches;
+    if (window.matchMedia('(hover: hover)').matches && motionOk) {
+      this.addEventListener('mouseenter', () => {
+        if (!this._expanded) {
+          gsap.to(this, {
+            x: -3,
+            y: -3,
+            duration: 0.2,
+            ease: 'power2.out'
+          });
+        }
+      });
+
+      this.addEventListener('mouseleave', () => {
+        if (!this._expanded) {
+          gsap.to(this, {
+            x: 0,
+            y: 0,
+            duration: 0.3,
+            ease: 'elastic.out(1, 0.6)'
+          });
+        }
+      });
+    }
+  }
+
+  toggle() {
+    this._expanded = !this._expanded;
+    this.classList.toggle('expanded', this._expanded);
+
+    const details = this.querySelector('.card-details');
+    const desc = this.querySelector('.card-description');
+
+    if (this._expanded) {
+      gsap.to(details, { maxHeight: 500, opacity: 1, duration: 0.5, ease: 'expo.out' });
+      gsap.to(desc, { maxHeight: 200, opacity: 1, duration: 0.4, ease: 'expo.out' });
+      gsap.to(this, { x: 0, y: 0, duration: 0.2 });
+    } else {
+      gsap.to(details, { maxHeight: 0, opacity: 0, duration: 0.3, ease: 'expo.in' });
+      this._jsonldVisible = false;
+      const jsonLdEl = this.querySelector('.card-jsonld');
+      if (jsonLdEl) jsonLdEl.classList.remove('visible');
+    }
+  }
+}
+
+customElements.define('skill-card', SkillCard);
+
+// ===== APP STATE =====
+let activeCategory = 'All';
+let searchQuery = '';
+let sortMode = 'alpha';
+
+// ===== URL PARAM AUTO-FILTER =====
+function applyURLParams() {
+  const params = new URLSearchParams(window.location.search);
+  const skillParam = params.get('skill');
+  const categoryParam = params.get('category');
+
+  if (skillParam) {
+    searchQuery = skillParam.trim();
+    const searchInput = document.getElementById('search-input');
+    if (searchInput) searchInput.value = searchQuery;
+  }
+
+  if (categoryParam) {
+    const decoded = decodeURIComponent(categoryParam.trim());
+    const match = CATEGORIES.find(c => c.name.toLowerCase() === decoded.toLowerCase());
+    if (match) {
+      activeCategory = match.name;
+    }
+  }
+}
+
+// ===== INIT =====
+document.addEventListener('DOMContentLoaded', () => {
+  applyPalette();
+  applyEmbedMode();
+  applyURLParams();
+  initMarquee();
+  initFilterChips();
+  renderSkills();
+  initSearch();
+  initSort();
+  initScrollProgress();
+  initScrollTopFab();
+  initHeroAnimations();
+  initCardRevealAnimations();
+  initParallax();
+  initClearFilters();
+  initKeyboardShortcuts();
+});
+
+// ===== MARQUEE =====
+function initMarquee() {
+  const inner = document.getElementById('marquee-inner');
+  const items = [
+    '48 SKILLS', '\u25C6', '10 CATEGORIES', '\u25C6',
+    'NEO-BRUTALIST', '\u25C6', 'GSAP POWERED', '\u25C6',
+    'WEB COMPONENTS', '\u25C6', 'JSON-LD READY', '\u25C6',
+    'WCAG AA', '\u25C6', 'ZERO BUILD STEP', '\u25C6',
+    'DESIGN', '\u25C6', 'DEVELOPMENT', '\u25C6', 'REASONING', '\u25C6',
+    'CONTENT', '\u25C6', 'STRATEGY', '\u25C6', 'SYSTEM', '\u25C6',
+    'DATA', '\u25C6', 'CREATIVE', '\u25C6', 'MCP SERVERS', '\u25C6',
+    'AGENT MODES', '\u25C6',
+  ];
+  // Double for seamless loop
+  const html = [...items, ...items].map(i => `<span>${i}</span>`).join('');
+  inner.innerHTML = html;
+}
+
+// ===== FILTER CHIPS =====
+function initFilterChips() {
+  const container = document.getElementById('filter-chips');
+  CATEGORIES.forEach(cat => {
+    const chip = document.createElement('button');
+    chip.className = 'filter-chip' + (cat.name === activeCategory ? ' active' : '');
+    chip.textContent = cat.name.toUpperCase();
+    chip.setAttribute('role', 'tab');
+    chip.setAttribute('aria-selected', cat.name === activeCategory ? 'true' : 'false');
+    chip.setAttribute('aria-label', `Filter by ${cat.name}`);
+    chip.id = `chip-${cat.name.replace(/\s+&?\s*/g, '-').toLowerCase()}`;
+    chip.style.setProperty('--chip-color', cat.color);
+    chip.addEventListener('click', () => {
+      activeCategory = cat.name;
+      document.querySelectorAll('.filter-chip').forEach(c => {
+        c.classList.remove('active');
+        c.setAttribute('aria-selected', 'false');
+      });
+      chip.classList.add('active');
+      chip.setAttribute('aria-selected', 'true');
+      renderSkills();
+    });
+    container.appendChild(chip);
+  });
+}
+
+// ===== RENDER SKILLS =====
+function renderSkills() {
+  const grid = document.getElementById('skills-grid');
+  let filtered = [...SKILLS_DATA];
+
+  if (activeCategory !== 'All') {
+    filtered = filtered.filter(s => s.category === activeCategory);
+  }
+
+  if (searchQuery) {
+    const q = searchQuery.toLowerCase();
+    filtered = filtered.filter(s =>
+      s.name.toLowerCase().includes(q) ||
+      s.tags.some(t => t.toLowerCase().includes(q)) ||
+      s.description.toLowerCase().includes(q)
+    );
+  }
+
+  filtered = sortSkills(filtered, sortMode);
+
+  document.getElementById('skill-count').textContent = filtered.length;
+
+  // Guard: Flip.getState crashes on empty grids
+  const existingCards = grid.querySelectorAll('skill-card');
+  let state = null;
+  if (existingCards.length > 0) {
+    try { state = Flip.getState('.skills-grid skill-card'); } catch(e) { state = null; }
+  }
+
+  grid.innerHTML = '';
+
+  if (filtered.length === 0) {
+    grid.innerHTML = `
+      <div class="no-results">
+        <div class="no-results-icon">\u{1F50D}</div>
+        <div class="no-results-text">NO SKILLS MATCH YOUR FILTERS</div>
+      </div>
+    `;
+    return;
+  }
+
+  filtered.forEach((skill, i) => {
+    const card = document.createElement('skill-card');
+    card.setAttribute('name', skill.name);
+    card.setAttribute('category', skill.category);
+    card.setAttribute('description', skill.description);
+    card.setAttribute('icon', skill.icon);
+    card.setAttribute('invoke', skill.invoke);
+    card.setAttribute('tags', skill.tags.join(','));
+    card.style.setProperty('--card-accent', skill.accent);
+    card.dataset.index = i;
+    grid.appendChild(card);
+  });
+
+  if (state && grid.children.length > 0) {
+    Flip.from(state, {
+      duration: 0.35,
+      ease: 'power2.inOut',
+      absolute: true,
+      scale: true
+    });
+  }
+
+  ScrollTrigger.refresh();
+}
+
+function sortSkills(skills, mode) {
+  const sorted = [...skills];
+  switch (mode) {
+    case 'alpha':
+      sorted.sort((a, b) => a.name.localeCompare(b.name));
+      break;
+    case 'category':
+      sorted.sort((a, b) => a.category.localeCompare(b.category) || a.name.localeCompare(b.name));
+      break;
+    case 'recent':
+      sorted.reverse();
+      break;
+  }
+  return sorted;
+}
+
+// ===== SEARCH =====
+function initSearch() {
+  const input = document.getElementById('search-input');
+  let debounce;
+  input.addEventListener('input', () => {
+    clearTimeout(debounce);
+    debounce = setTimeout(() => {
+      searchQuery = input.value.trim();
+      renderSkills();
+    }, 200);
+  });
+}
+
+// ===== SORT =====
+function initSort() {
+  const select = document.getElementById('sort-select');
+  select.addEventListener('change', () => {
+    sortMode = select.value;
+    renderSkills();
+  });
+}
+
+// ===== SCROLL PROGRESS BAR =====
+function initScrollProgress() {
+  gsap.to('#progress-bar', {
+    width: '100%',
+    ease: 'none',
+    scrollTrigger: {
+      trigger: document.body,
+      start: 'top top',
+      end: 'bottom bottom',
+      scrub: 0.3
+    }
+  });
+}
+
+// ===== SCROLL-TO-TOP FAB =====
+function initScrollTopFab() {
+  const fab = document.getElementById('scroll-top-fab');
+  ScrollTrigger.create({
+    start: 'top -400',
+    onEnter: () => fab.classList.add('visible'),
+    onLeaveBack: () => fab.classList.remove('visible')
+  });
+  fab.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+}
+
+// ===== HERO ANIMATIONS — BRUTALIST GSAP =====
+function initHeroAnimations() {
+  gsap.registerPlugin(ScrollTrigger);
+
+  // Respect reduced-motion preference
+  const mm = gsap.matchMedia();
+  mm.add("(prefers-reduced-motion: no-preference)", () => {
+    const tl = gsap.timeline({ defaults: { ease: 'power3.out' } });
+
+    // Badge slam in
+    tl.fromTo('#hero-badge',
+      { opacity: 0, x: -60, rotation: 15 },
+      { opacity: 1, x: 0, rotation: -2, duration: 0.6, ease: 'back.out(2)' },
+      0.2
+    );
+
+    // Title: character-by-character reveal with glitch-style stagger
+    const titleEl = document.getElementById('hero-title');
+    const titleText = titleEl.textContent;
+    titleEl.innerHTML = '';
+    titleText.split('').forEach((char, i) => {
+      const span = document.createElement('span');
+      span.className = 'char';
+      span.textContent = char === ' ' ? '\u00A0' : char;
+      titleEl.appendChild(span);
+    });
+
+    tl.fromTo('#hero-title .char',
+      { opacity: 0, y: 40, rotationX: -90, scale: 0.5 },
+      { opacity: 1, y: 0, rotationX: 0, scale: 1, stagger: 0.03, duration: 0.4, ease: 'back.out(1.7)' },
+      0.4
+    );
+
+    // Subtitle: typewriter-style slide
+    tl.fromTo('#hero-subtitle',
+      { opacity: 0, x: -40, clipPath: 'inset(0 100% 0 0)' },
+      { opacity: 1, x: 0, clipPath: 'inset(0 0% 0 0)', duration: 0.8, ease: 'power3.out' },
+      1.2
+    );
+
+    // CTA: slam with rotation
+    tl.fromTo('#hero-cta',
+      { scale: 0, rotation: -15, opacity: 0 },
+      { scale: 1, rotation: 1, opacity: 1, duration: 0.6, ease: 'back.out(3)' },
+      1.6
+    );
+
+    // Hero card: slide up with rotation
+    tl.fromTo('#hero-card',
+      { opacity: 0, y: 60, rotation: 5 },
+      { opacity: 1, y: 0, rotation: -1, duration: 0.7, ease: 'expo.out' },
+      1.9
+    );
+
+    // Orbit badges — continuous rotation
+    const radius = 220;
+    ['orbit-1','orbit-2','orbit-3'].forEach((id, i) => {
+      const angle = (i * 120 - 90) * Math.PI / 180;
+      const x = Math.cos(angle) * radius;
+      const y = Math.sin(angle) * radius;
+      const badge = document.getElementById(id);
+      gsap.set(badge, { x: x, y: y });
+    });
+
+    gsap.to('#hero-orbit', { rotation: 360, duration: 25, ease: 'none', repeat: -1 });
+    gsap.to('.orbit-badge', { rotation: -360, duration: 25, ease: 'none', repeat: -1 });
+  });
+}
+
+// ===== CARD REVEAL ANIMATIONS — BRUTALIST =====
+function initCardRevealAnimations() {
+  gsap.registerPlugin(ScrollTrigger);
+
+  const mm = gsap.matchMedia();
+  mm.add("(prefers-reduced-motion: no-preference)", () => {
+    setTimeout(() => {
+      ScrollTrigger.batch('skill-card', {
+        onEnter: (elements) => {
+          gsap.fromTo(elements,
+            { opacity: 0, y: 60, scale: 0.9, rotation: 2 },
+            { opacity: 1, y: 0, scale: 1, rotation: 0, stagger: { each: 0.06, from: 'start' }, duration: 0.5, ease: 'back.out(1.5)' }
+          );
+        },
+        start: 'top 88%',
+        once: true
+      });
+    }, 100);
+  });
+}
+
+// ===== PARALLAX =====
+function initParallax() {
+  const mm = gsap.matchMedia();
+  mm.add("(prefers-reduced-motion: no-preference)", () => {
+    gsap.to('#hero-subtitle', {
+      yPercent: -20,
+      ease: 'none',
+      scrollTrigger: {
+        trigger: '#hero',
+        start: 'top top',
+        end: 'bottom top',
+        scrub: true
+      }
+    });
+
+  gsap.to('#hero-title', {
+    yPercent: -10,
+    ease: 'none',
+    scrollTrigger: {
+      trigger: '#hero',
+      start: 'top top',
+      end: 'bottom top',
+      scrub: true
+    }
+  });
+  });
+}
+
+// ===== HERO CTA SCROLL =====
+document.getElementById('hero-cta').addEventListener('click', () => {
+  document.getElementById('filter-section').scrollIntoView({ behavior: 'smooth' });
+});
+
+// ===== CLEAR FILTERS =====
+function initClearFilters() {
+  const btn = document.getElementById('clear-filters-btn');
+  btn.addEventListener('click', () => {
+    activeCategory = 'All';
+    searchQuery = '';
+    sortMode = 'alpha';
+    const input = document.getElementById('search-input');
+    input.value = '';
+    const select = document.getElementById('sort-select');
+    select.value = 'alpha';
+    // Reset active chip
+    document.querySelectorAll('#filter-chips .chip').forEach(c => c.removeAttribute('aria-selected'));
+    document.querySelector('#filter-chips .chip[data-category="All"]')?.setAttribute('aria-selected', 'true');
+    renderSkills();
+  });
+}
+
+// ===== KEYBOARD SHORTCUTS =====
+function initKeyboardShortcuts() {
+  let skillCards = [];
+  let currentFocus = -1;
+
+  function refreshCardList() {
+    skillCards = [...document.querySelectorAll('skill-card')];
+    currentFocus = -1;
+  }
+
+  document.addEventListener('keydown', (e) => {
+    // Ignore if user is typing in an input
+    if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA' || e.target.tagName === 'SELECT') {
+      if (e.key === 'Escape') {
+        e.target.blur();
+      }
+      return;
+    }
+
+    switch (e.key) {
+      case '/':
+        e.preventDefault();
+        document.getElementById('search-input').focus();
+        break;
+      case 'j':
+      case 'ArrowDown':
+        e.preventDefault();
+        refreshCardList();
+        if (skillCards.length === 0) return;
+        currentFocus = Math.min(currentFocus + 1, skillCards.length - 1);
+        skillCards[currentFocus].scrollIntoView({ behavior: 'smooth', block: 'center' });
+        skillCards[currentFocus].focus();
+        skillCards[currentFocus].classList.add('kbd-highlight');
+        break;
+      case 'k':
+      case 'ArrowUp':
+        e.preventDefault();
+        refreshCardList();
+        if (skillCards.length === 0) return;
+        currentFocus = Math.max(currentFocus - 1, 0);
+        skillCards[currentFocus].scrollIntoView({ behavior: 'smooth', block: 'center' });
+        skillCards[currentFocus].focus();
+        skillCards[currentFocus].classList.add('kbd-highlight');
+        break;
+      case 'c':
+        document.getElementById('clear-filters-btn').click();
+        break;
+    }
+  });
+
+  // Remove highlight when clicking elsewhere
+  document.addEventListener('click', () => {
+    document.querySelectorAll('.kbd-highlight').forEach(el => el.classList.remove('kbd-highlight'));
+  });
+}
+</script>
+
+<!-- Keyboard shortcut hint -->
+<div class="kbd-hint" id="kbd-hint">
+  <kbd>/</kbd> SEARCH &middot; <kbd>J</kbd><kbd>K</kbd> NAV &middot; <kbd>C</kbd> CLEAR &middot; <kbd>ESC</kbd> BLUR
+</div>
+</body>
+</html>
