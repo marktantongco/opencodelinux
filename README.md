@@ -1,10 +1,10 @@
 # opencodelinux
 
-**The portable, ready-to-run OpenCode ecosystem — 217 AI agent skills, 17 agent profiles, 6 custom MCP servers, and a 78-server curated registry.**
+**The portable, ready-to-run OpenCode ecosystem — 218 AI agent skills, 17 agent profiles, 6 custom MCP servers, and a 78-server curated registry.**
 
 [![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-live-success?logo=github)](https://marktantongco.github.io/opencodelinux/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![Skills](https://img.shields.io/badge/skills-217-blueviolet)](#skills-overview)
+[![Skills](https://img.shields.io/badge/skills-218-blueviolet)](#skills-overview)
 [![MCP Servers](https://img.shields.io/badge/MCP%20servers-78%20curated-blue)](#mcp-stack-recommendations)
 [![OpenCode](https://img.shields.io/badge/OpenCode-v3.0-000?logo=openai)](#)
 
@@ -66,13 +66,13 @@ This repo is the union of three OpenCode configurations, merged with a capabilit
 | `.agents/skills/` | 172 | Agent-bundled skills — AI generation, dev tools, infrastructure |
 | `opencode-accomplishments/` | ~51 | Showcase — curated skills, MCP registry, stacks, website |
 
-**Total after deduplication: 217 unique skills** (no skill lost — duplicates resolved by richer content wins).
+**Total after deduplication: 218 unique skills** (no skill lost — duplicates resolved by richer content wins).
 
 ### What you get
 
 | Asset | Count | Description |
 |-------|-------|-------------|
-| **Skills** | 217 | Standalone skill directories with SKILL.md documentation |
+| **Skills** | 218 | Standalone skill directories with SKILL.md documentation |
 | **Agent profiles** | 17 | Pre-configured agent roles (orchestrator, plan, oracle, council, etc.) |
 | **Custom MCP servers** | 6 | TypeScript MCP servers for catalog, registry, search, security, stacks, image gen |
 | **MCP registry** | 78 | Curated free MCP servers across 14 categories |
@@ -87,7 +87,7 @@ This repo is the union of three OpenCode configurations, merged with a capabilit
 
 ## Skills Overview
 
-All 217 skills — each a self-contained directory with `SKILL.md`. See [SKILLS.md](./SKILLS.md) for the full inventory.
+All 218 skills — each a self-contained directory with `SKILL.md`. See [SKILLS.md](./SKILLS.md) for the full inventory.
 
 ### AI Content Creation (~40 skills)
 
@@ -123,7 +123,7 @@ All 217 skills — each a self-contained directory with `SKILL.md`. See [SKILLS.
 
 ### Marketing & Communications (~15 skills)
 
-`case-study-writing`, `content-repurposing`, `explainer-video-guide`, `internal-comms`, `linkedin-content`, `newsletter-curation`, `press-release-writing`, `product-changelog`, `product-hunt-launch`, `seo-content-brief`, `seo-content-writer`, `seo-audit`, `technical-blog-writing`, `twitter-thread-creation`, `social-content-pillars`
+`case-study-writing`, `content-repurposing`, `explainer-video-guide`, `hermes-tweet`, `internal-comms`, `linkedin-content`, `newsletter-curation`, `press-release-writing`, `product-changelog`, `product-hunt-launch`, `seo-content-brief`, `seo-content-writer`, `seo-audit`, `technical-blog-writing`, `twitter-thread-creation`, `social-content-pillars`
 
 ### Research & Knowledge (~15 skills)
 
@@ -213,14 +213,14 @@ All servers are pre-built (`dist/`) and ready to run. To rebuild: `cd mcp-server
 opencodelinux/
 ├── AGENTS.md                # Master system prompt v3.0 — 725 lines
 ├── opencode.jsonc           # OpenCode configuration (agents, MCP, plugins, providers)
-├── SKILLS.md                # Full merged skill inventory (217 skills categorized)
+├── SKILLS.md                # Full merged skill inventory (218 skills categorized)
 ├── PLUGINS.md               # Terminal & dev plugin installation guide
 ├── mcp-registry.json        # 78 free MCP servers across 14 categories
 ├── stacks.json              # 8 pre-built MCP stacks with synergy analysis
 ├── skill-registry.json      # Canonical skill registry with categories & descriptions
 ├── package.json             # Root package with utility scripts
 │
-├── skills/                  # 217 deduplicated skill directories
+├── skills/                  # 218 deduplicated skill directories
 │   ├── <skill-name>/
 │   │   ├── SKILL.md         # Skill documentation & instructions
 │   │   └── references/      # Optional: examples, guides, resources
