@@ -3661,6 +3661,49 @@
       ]
     },
     {
+      "name": "hermes-tweet",
+      "category": "marketing-comms",
+      "source": ".config/opencode/skills",
+      "status": "active",
+      "priority": 5,
+      "triggers": [
+        "hermes tweet",
+        "hermes agent twitter",
+        "x twitter plugin",
+        "tweet_explore",
+        "tweet_read",
+        "tweet_action"
+      ],
+      "_auto": true,
+      "description": "Hermes Agent native X/Twitter plugin workflow for installing Xquik-dev/hermes-tweet, discovering available routes with tweet_explore, reading public or account data with tweet_read, and keeping tweet_action behind explicit user approval plus HERMES_TWEET_ENABLE_ACTIONS=true.",
+      "path": "hermes-tweet/SKILL.md",
+      "expects": [
+        {
+          "key": "task",
+          "type": "string",
+          "description": "X/Twitter research, monitoring, or approved action request to run through Hermes Agent"
+        },
+        {
+          "key": "hermes_runtime",
+          "type": "string",
+          "description": "Local, gateway, or project Hermes runtime where the plugin executes",
+          "default": "local"
+        }
+      ],
+      "provides": [
+        {
+          "key": "workflow",
+          "type": "string",
+          "description": "Safe Hermes Tweet setup or tool-use plan"
+        },
+        {
+          "key": "result",
+          "type": "string",
+          "description": "Read result, action summary, or blocked-gate explanation"
+        }
+      ]
+    },
+    {
       "name": "high-end-visual-design",
       "category": "ui-design",
       "source": ".agents/skills",

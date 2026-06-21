@@ -1,6 +1,6 @@
 # OpenCode Linux — Merged Skill Inventory
 
-**Total Skills:** 217  
+**Total Skills:** 218
 **Generated:** 2026-05-25  
 **Merge Strategy:** Capability-first dedup — all skills from 3 sources (config, agents, showcase), duplicates resolved by larger SKILL.md wins. See [MERGE.md](./MERGE.md) for full details.
 
@@ -225,6 +225,7 @@
 | 215 | `xlsx` | Documents | Create, read, edit spreadsheets (.xlsx, .csv, .tsv) |
 | 216 | `youtube-thumbnail-design` | Design | YouTube thumbnail design — dimensions, contrast, CTR optimization |
 | 217 | `zoom-out` | Development | Get broader context and higher-level perspective on code |
+| 218 | `hermes-tweet` | Marketing | Hermes Agent native X/Twitter plugin workflow for read-first X/Twitter tools |
 
 ## Skill Categories
 
@@ -249,7 +250,7 @@
 | DevOps | 8 | deploy, deployment-manager, github-actions-docs, openclaw-secure-linux-cloud, platform-guides, running-claude-code-via-litellm-copilot, secure-linux-web-hosting, system-prompt-sync, tzst, wave-terminal, xdrop, xget |
 | Documents | 3 | docx, pdf, pptx, xlsx |
 | Education | 2 | explained-code, socratic-method |
-| Marketing | 3 | product-hunt-launch, seo-audit, seo-content-brief, social-media-manager, video-ad-specs |
+| Marketing | 6 | hermes-tweet, product-hunt-launch, seo-audit, seo-content-brief, social-media-manager, video-ad-specs |
 | Process | 14 | brainstorming, chain-of-thought, context-compressor, devils-advocate, dispatching-parallel-agents, executing-plans, feedback-loop, grill-me, grill-with-docs, handoff, simulation-sandbox, to-issues, to-prd, triage, using-superpowers, verification-before-completion, writing-plans |
 | Quality | 2 | audit, audit-analyzer |
 | Research | 2 | competitor-teardown, customer-persona, jtbd-research |
